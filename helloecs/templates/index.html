@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+</head>
+<body>
+  <span style=color:orange;text-align:center;display:flex;flex-direction:column;justify-content:center;text-align:center;> 
+    <h1>{{ title }}</h1>
+    <span style=color:darkslategray;>
+      <h1>You have successfully created {{app_type}} app!</H1>
+      <H2>Congratulations on learning the {{module}} in the {{title}}!</H2>
+    </span>
+    <p>This demo website was developed by {{ author }}.</p>
+    <p>Now using the Django's Template Engine.</p>
+    <span style=color:darkslategray;>
+      <p>Run at: {{date}}</p>
+    </span>
+    <p><a href="{% url 'index' %}">Return to the homepage</a>.</p>
+  </span>
+</body>
+</html>
