@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  helloecs:
-    image: helloecs
+  hellofargate:
+    image: hellofargate
     build:
       context: .
       dockerfile: ./Dockerfile

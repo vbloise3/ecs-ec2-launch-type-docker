@@ -25,7 +25,7 @@ SECRET_KEY = 'xxlf0so2t_1e2-rb7w0z2@0px!u1u!zp&_77%v_=u(a&s%q_ml'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["registry.hub.docker.com/vbloise/helloecs", "*"]
+ALLOWED_HOSTS = ["registry.hub.docker.com/vbloise/hellofargate", "*"]
 
 
 # Application definition
@@ -50,12 +50,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'helloecs.urls'
+ROOT_URLCONF = 'hellofargate.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['helloecs/templates/'],
+        'DIRS': ['hellofargate/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'helloecs.wsgi.application'
+WSGI_APPLICATION = 'hellofargate.wsgi.application'
 
 
 # Database
