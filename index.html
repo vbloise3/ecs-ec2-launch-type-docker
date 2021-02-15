@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Certified Architect Associate Course</title>
+<script type="text/javascript">
+function get_date_time() {
+   const monthNames = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+   ];
+   var currentdate = new Date();
+   var datetime = "Last Sync: " 
+                + monthNames[(currentdate.getMonth())]  + " "
+                + currentdate.getDate() + ", "
+                + currentdate.getFullYear() + " @ "
+                + currentdate.getHours() + ":"
+                + ('0' + currentdate.getMinutes()).slice(-2) + ":"
+                + ('0' + currentdate.getSeconds()).slice(-2);
+   document.getElementById("myText").innerHTML = datetime;
+}
+</script>
+</head>
+<body onload="get_date_time()">
+  <span style=color:orange;text-align:center;display:flex;flex-direction:column;justify-content:center;text-align:center;> 
+    <h1>AWS Certified Architect Associate course</h1>
+    <span style=color:darkslategray;>
+      <h1>You have successfully created an ECS FARGATE launch-type app!</H1>
+      <H2>Congratulations on learning the ECS Fargate fundamentals in the AWS Certified Architect Associate course!</H2>
+    </span>
+    <image src="Fargate-lab.png" alt="ECS Fargate basic flow" style="width:1000px;height:500px;display: block;margin-left: auto;margin-right: auto;width: 50%;">
+    <p>This demo website was developed by Whiz Labs.</p>
+    <p>Now using the Django's Template Engine.</p>
+    <span style=color:darkslategray;>
+      <p>Run at: <span id="myText"></span></p>
+    </span>
+  </span>
+</body>
+</html> 
